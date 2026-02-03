@@ -3,9 +3,9 @@ import os
 import glob
 
 # ================= CONFIGURATION =================
-video_path = "GH020129-00.00.25.566-00.01.30.760.mp4"       
-annotation_folder = r"C:\Users\vidp3qe\Downloads\cow bright\obj_train_data"  
-output_folder = "reconstructed_dataset_cow_bright"
+video_path = "raw_footage.mp4"       
+annotation_folder = r"C:\path\to\cvat_exports"  
+output_folder = "reconstructed_dataset"
 # =================================================
 
 os.makedirs(output_folder, exist_ok=True)
@@ -87,4 +87,5 @@ while True:
 
 cap.release()
 print(f"\nDONE! Successfully extracted {saved_count} pairs.")
+
 input("Press Enter to close...")
