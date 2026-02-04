@@ -34,6 +34,19 @@ The project successfully processed over **13,000 frames** of milking footage. Th
 
 ![Validation Graph](https://via.placeholder.com/800x400?text=Upload+Your+Validation+Summary+Plot+Here)
 *(See `docs/Final_Report.pdf` for the complete statistical breakdown)*
+## 📈 Performance & Results
+
+### 1. Model Evaluation (YOLOv8 vs RT-DETR)
+The model achieved high precision even in low-light conditions. As seen in the Confusion Matrix, the model successfully distinguishes between the "Head" and background noise.
+
+| Confusion Matrix | F1-Confidence Curve |
+| :---: | :---: |
+| ![Confusion Matrix](results/yolov8_confusion_matrix.png) | ![F1 Curve](results/F1_curve.png) |
+
+### 2. Visual Validation
+Below is a sample of the model tracking a cow's head correctly despite severe occlusion from the feed bin bars.
+
+![Inference Example](results/inference_examples/cow_detection_1.jpg)
 
 ## 🔧 Usage
 **1. Install Dependencies**
