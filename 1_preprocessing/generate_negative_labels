@@ -1,5 +1,5 @@
 import os
-
+#
 # ================= CONFIGURATION =================
 # Path to folder containing empty background images (Negative Samples)
 FOLDER_PATH = "data/background_images"
