@@ -5,12 +5,12 @@
 
 This project validates the accuracy of  methane sniffer protocols using Computer Vision. By automating the tracking of cow head positions in milking parlors, we correlated behavioral data with sensor logs to biologically validate the standard sampling window.
 
-Using **YOLOv8** and **RT-DETR**, the system tracks cattle under severe occlusion (stanchions/feed bins) and uses unsupervised **K-Means clustering** to algorithmically determine feeding thresholds.
+Using **YOLOv8** and **RT-DETR**, the system tracks cattle under severe occlusion (infrastructure/feed bins) and uses unsupervised K-Means clustering to algorithmically determine feeding thresholds.
 
 ## 🚀 Key Features
 * **Amodal Detection:** Robust tracking of cattle heads under severe occlusion using custom-trained YOLOv8/RT-DETR models.
 * **Algorithmic Thresholding:** Replaced manual guessing with **K-Means Clustering ($k=2$)** to scientifically define "Feeding" vs "Non-Feeding" states.
-* **Interactive Tooling:** Built a custom NMS Tuning Tool (`tune_nms.py`) to optimize Confidence/IoU thresholds in real-time.
+* **Interactive Tooling:** Built a custom NMS Tuning Tool (`tune_nms.py`) to optimize Confidence/IoU thresholds.
 * **Biological Validation:** Confirmed the "Biphasic Feeding Pattern" aligns with the industry-standard 90s–410s sampling window.
 
 ## 📂 Repository Structure
@@ -37,7 +37,7 @@ The project successfully processed over **15,000 frames** of milking footage. Th
 *(See `docs/Final_Report.pdf` for the complete statistical breakdown)*
 ## 📜 Project Documentation
 * **[Executive Presentation (PDF)](docs/Executive_Presentation.pdf):** A 15-slide visual summary of the project goals, methodology, and biological validation results.
-* **[Full Technical Report (PDF)](docs/Final_Report.pdf):** The complete comprehensive paper detailing the deep learning architecture, error analysis, and statistical validation.
+* **[Full Technical Report (PDF)](docs/Final_Report.pdf):** A technical report detailing the methods, error analysis, and statistical validation.
 
 ## 📈 Performance & Results
 
@@ -49,7 +49,7 @@ The model achieved high precision even in low-light conditions. As seen in the C
 | ![Confusion Matrix](results/yolov8_confusion_matrix.png) | ![F1 Curve](results/F1_curve.png) |
 
 ### 2. Visual Validation
-Below is a sample of the model tracking a cow's head correctly despite severe occlusion from the feed bin bars.
+Below is a sample of the model tracking a cow's head correctly despite severe occlusion from the feed bin and tubing.
 
 ![Inference Example](results/inference_examples/Example_1.png)
 
