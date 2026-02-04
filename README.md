@@ -17,7 +17,7 @@ Using **YOLOv8** and **RT-DETR**, the system tracks cattle under severe occlusio
 
 | Folder | Description |
 | :--- | :--- |
-| **`1_preprocessing/`** | Scripts to sync CVAT annotations and generate "Negative Samples" (empty bails). |
+| **`1_preprocessing/`** | Utilities for dataset management, including frame synchronization, negative sample generation, and automated pre-annotation pipelines for active learning. |
 | **`2_training/`** | Training loops for YOLOv8/RT-DETR and calibration tools for determining feed rail coordinates. |
 | **`3_inference/`** | The core inference engine using **ByteTrack** and the interactive NMS tuner. |
 | **`4_analysis/`** | Scripts for generating the "Herd Feeding Index" and the Biphasic Validation graphs. |
