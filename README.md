@@ -23,6 +23,7 @@ Using **YOLOv8** and **RT-DETR**, the system tracks cattle under severe occlusio
 | **`4_analysis/`** | Scripts for generating the "Herd Feeding Index" and the Biphasic Validation graphs. |
 | **`5_utils/`** | Helper scripts for video metadata inspection and frame rate checks. |
 | **`docs/`** | Contains the full **Technical Report (PDF)**. |
+|**`results/`** | Contains results from Ultralytics training. |
 
 ## 🛠️ Tech Stack
 * **Computer Vision:** Ultralytics YOLOv8, RT-DETR, OpenCV, ByteTrack
