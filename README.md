@@ -46,7 +46,7 @@ The model achieved high precision even in low-light conditions. As seen in the C
 
 | Confusion Matrix | 
 | :---: |
-| ![Confusion Matrix](results/inference_examples/CONFUSION_MATRIX.png) |
+| ![Confusion Matrix](results/inference_examples/Conf.png) |
 
 ### 2. Visual Validation
 Below is a sample of the model tracking a cow's head correctly despite severe occlusion from the feed bin and tubing.
