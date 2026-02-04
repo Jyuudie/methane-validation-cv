@@ -30,7 +30,7 @@ Using **YOLOv8** and **RT-DETR**, the system tracks cattle under severe occlusio
 * **Visualization:** Matplotlib, Seaborn
 
 ## 📊 Results at a Glance
-The project successfully processed over **13,000 frames** of milking footage. The analysis revealed a clear "W-shaped" feeding pattern, proving that the standard 320-second sampling window is statistically sufficient to capture representative eructation (burp) events.
+The project successfully processed over **15,000 frames** of milking footage. The analysis revealed a clear "W-shaped" feeding pattern, proving that the standard 320-second sampling window is statistically sufficient to capture representative eructation (burp) events.
 
 ![Validation Graph](https://via.placeholder.com/800x400?text=Upload+Your+Validation+Summary+Plot+Here)
 *(See `docs/Final_Report.pdf` for the complete statistical breakdown)*
