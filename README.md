@@ -46,7 +46,7 @@ The model achieved high precision even in low-light conditions. As seen in the C
 ### 2. Visual Validation
 Below is a sample of the model tracking a cow's head correctly despite severe occlusion from the feed bin bars.
 
-![Inference Example](results/inference_examples/cow_detection_1.jpg)
+![Inference Example](results/inference_examples/Example_1.png)
 
 ## 🔧 Usage
 **1. Install Dependencies**
