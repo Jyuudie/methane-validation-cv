@@ -1,20 +1,42 @@
-# methane-validation-cv
+# Automated Validation of Methane Sniffer Protocols in Dairy Cattle
 
-## Overview
-This repository contains the computer vision pipeline developed to validate methane sampling protocols in dairy cattle. Using **YOLOv8** and **RT-DETR**, the system tracks cow head positions in milking parlors to correlate behavioral data with sniffer sensor logs.
+## 📌 Project Overview
+**Can we trust the data from methane sensors if we don't know where the cow's head is?**
 
-## Key Features
-* **Amodal Detection:** robust tracking of cattle heads under severe occlusion (feed bins/stanchions).
-* **Architecture Comparison:** Benchmarking CNN (YOLO) vs. Transformer (RT-DETR).
-* **Biological Validation:** Algorithmic verification of the 90–410s sampling window via "Biphasic Feeding" analysis.
+This project validates the accuracy of  methane sniffer protocols using Computer Vision. By automating the tracking of cow head positions in milking parlors, we correlated behavioral data with sensor logs to biologically validate the standard sampling window.
 
-## Pipeline
-1.  **Preprocessing:** Custom scripts to synchronize CVAT label exports with raw video frames.
-2.  **Training:** Implementation of Ultralytics YOLOv8/RT-DETR with domain-specific augmentations (Mosaic, MixUp).
-3.  **Inference:** Real-time tracking using ByteTrack to generate spatial time-series data.
-4.  **Analysis:** Pandas/Matplotlib scripts to derive the "Herd Feeding Index."
+Using **YOLOv8** and **RT-DETR**, the system tracks cattle under severe occlusion (stanchions/feed bins) and uses unsupervised **K-Means clustering** to algorithmically determine feeding thresholds.
 
-## Usage
-To reproduce the training loop:
+## 🚀 Key Features
+* **Amodal Detection:** Robust tracking of cattle heads under severe occlusion using custom-trained YOLOv8/RT-DETR models.
+* **Algorithmic Thresholding:** Replaced manual guessing with **K-Means Clustering ($k=2$)** to scientifically define "Feeding" vs "Non-Feeding" states.
+* **Interactive Tooling:** Built a custom NMS Tuning Tool (`tune_nms.py`) to optimize Confidence/IoU thresholds in real-time.
+* **Biological Validation:** Confirmed the "Biphasic Feeding Pattern" aligns with the industry-standard 90s–410s sampling window.
+
+## 📂 Repository Structure
+
+| Folder | Description |
+| :--- | :--- |
+| **`1_preprocessing/`** | Scripts to sync CVAT annotations and generate "Negative Samples" (empty bails). |
+| **`2_training/`** | Training loops for YOLOv8/RT-DETR and calibration tools for determining feed rail coordinates. |
+| **`3_inference/`** | The core inference engine using **ByteTrack** and the interactive NMS tuner. |
+| **`4_analysis/`** | Scripts for generating the "Herd Feeding Index" and the Biphasic Validation graphs. |
+| **`5_utils/`** | Helper scripts for video metadata inspection and frame rate checks. |
+| **`docs/`** | Contains the full **Technical Report (PDF)**. |
+
+## 🛠️ Tech Stack
+* **Computer Vision:** Ultralytics YOLOv8, RT-DETR, OpenCV, ByteTrack
+* **Data Analysis:** Pandas, NumPy, Scikit-Learn (K-Means)
+* **Visualization:** Matplotlib, Seaborn
+
+## 📊 Results at a Glance
+The project successfully processed over **13,000 frames** of milking footage. The analysis revealed a clear "W-shaped" feeding pattern, proving that the standard 320-second sampling window is statistically sufficient to capture representative eructation (burp) events.
+
+![Validation Graph](https://via.placeholder.com/800x400?text=Upload+Your+Validation+Summary+Plot+Here)
+*(See `docs/Final_Report.pdf` for the complete statistical breakdown)*
+
+## 🔧 Usage
+**1. Install Dependencies**
 ```bash
-python 2_training/train_yolo.py --epochs 100 --batch 16
+pip install -r requirements.txt
+
