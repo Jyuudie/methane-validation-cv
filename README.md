@@ -37,7 +37,7 @@ The project successfully processed over **15,000 frames** of milking footage. Th
 *(See `docs/Final_Report.pdf` for the complete statistical breakdown)*
 ## 📜 Project Documentation
 * **[Executive Presentation (PDF)](docs/Executive_Presentation.pdf):** A 15-slide visual summary of the project goals, methodology, and biological validation results.
-* **[Full Technical Report (PDF)](docs/Final_Report.pdf):** A technical report detailing the methods, error analysis, and statistical validation.
+* **[Full Technical Report (PDF)](Docs/FINAL REPORT - VALIDATION OF METHANE SENORS USING OBJECT DETECTION.pdf):** A technical report detailing the methods, error analysis, and statistical validation.
 
 ## 📈 Performance & Results
 
