@@ -53,7 +53,9 @@ Below is a sample of the model tracking a cow's head correctly despite severe oc
 
 ![Inference Example](results/inference_examples/Example_1.png)
 
-## 🔧 Usage
+### **🔧 Usage**
+This project utilizes a **header-based configuration** workflow. Key parameters (file paths, thresholds) are defined in the `=== CONFIGURATION ===` block at the top of each script.
+
 **1. Install Dependencies**
 ```bash
 pip install -r requirements.txt
