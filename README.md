@@ -1,4 +1,4 @@
-# Automated Validation of Methane Sniffer Protocols in Dairy Cattle
+# Automated Validation of Methane Sniffer Protocols in Dairy Cattle using Object Dection
 
 ## 📌 Project Overview
 **Can we trust the data from methane sensors if we don't know where the cow's head is?**
