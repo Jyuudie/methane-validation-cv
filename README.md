@@ -58,7 +58,7 @@ Below is a sample of the model tracking a cow's head correctly despite severe oc
 ```bash
 pip install -r requirements.txt
 
-##📝 License & Citation
+###📝 License & Citation
 This project is licensed under the MIT License.
 
 Author: Judy Thanh Uyen Nguyen Institution: DEECA / Agriculture Victoria Research & La Trobe University
