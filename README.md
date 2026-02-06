@@ -59,8 +59,8 @@ This project utilizes a **header-based configuration** workflow. Key parameters 
 **1. Install Dependencies**
 ```bash
 pip install -r requirements.txt
-
-###📝 License & Citation
+```
+###**📝 License & Citation**
 This project is licensed under the MIT License.
 
 Author: Judy Thanh Uyen Nguyen Institution: DEECA / Agriculture Victoria Research & La Trobe University
