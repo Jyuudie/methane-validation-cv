@@ -56,7 +56,7 @@ The model achieved high precision even in low-light conditions. As seen in the C
 ### 2. Visual Validation
 Below is a sample of the model tracking a cow's head correctly despite severe occlusion from the feed bin and tubing.
 
-![Inference Example](results/inference_examples/Example_1.png)
+![Inference Example](results/inference_examples/Animation3.gif)
 
 ### **🔧 Usage**
 This project utilizes a **header-based configuration** workflow. Key parameters (file paths, thresholds) are defined in the `=== CONFIGURATION ===` block at the top of each script.
