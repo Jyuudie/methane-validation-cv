@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/Model-YOLOv8-green)
+![RT-DETR](https://img.shields.io/badge/Model-RT--DETR-orange)
+![Status](https://img.shields.io/badge/Status-Capstone%20Complete-success)
+
 # Automated Validation of Methane Sniffer Protocols in Dairy Cattle using Object Dectection
 
 ## 📌 Project Overview
