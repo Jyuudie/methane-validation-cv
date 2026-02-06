@@ -66,7 +66,7 @@ This project utilizes a **header-based configuration** workflow. Key parameters 
 pip install -r requirements.txt
 ```
 ### **📝 License & Citation**
-This project is licensed under the MIT License.
+⚠️ **Intellectual Property Notice** This code was developed as part of a Master's Capstone project with DEECA / Agriculture Victoria Research. The intellectual property belong to the host organization. This repository is published for academic and portfolio demonstration purposes only.
 
 Author: Judy Thanh Uyen Nguyen 
 
