@@ -63,6 +63,8 @@ pip install -r requirements.txt
 ### **📝 License & Citation**
 This project is licensed under the MIT License.
 
-Author: Judy Thanh Uyen Nguyen Institution: DEECA / Agriculture Victoria Research & La Trobe University
+Author: Judy Thanh Uyen Nguyen 
+
+Institution: DEECA / Agriculture Victoria Research & La Trobe University
 
 Note: This project was developed as part of the Master of Data Science capstone.
